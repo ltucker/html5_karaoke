@@ -11,6 +11,7 @@
 		document.getElementById('song').addEventListener("playing", function() {
 			player.play();
 		});
+                document.getElementById('song').play();
 	});
   </script>
 </head>
@@ -20,12 +21,11 @@
   <canvas id="karaoke-display" width="600" height="432">
   </canvas>
   <br/>
-  <audio id="song" controls="controls">
+  <audio id="song">
     <source src="private_eyes.mp3" type="audio/mpeg" />
   </audio>
   <br/>
-  Press Play To Start Demo.<br/>
-  Messing with controls otherwise is not implemented here.<br/>
+  You should see a karaoke player on this page, sorry if you don't.<br/>
   <a href="https://github.com/ltucker/html5_karaoke">Back to project</a>
 
   <div id="cdg-debug">
