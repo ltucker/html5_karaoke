@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!-- 
+  This must be served by a web browser as it uses an async http
+  request to fetch the cdg file.
+  -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="wcdg.js"></script>
+  <script>
+	$(document).ready(function() {
+	  	var player = new CDGPlayer(document.getElementById('karaoke-display'));
+	  	player.load('YOUR_CDG_FILE.cdg');
+		
+		document.getElementById('song').addEventListener("playing", function() {
+			player.play();
+		});
+	});
+  </script>
+</head>
+<body>
+  <div id="karaoke-player"></div>
+  
+  <canvas id="karaoke-display" width="600" height="432">
+  </canvas>
+  <audio id="song" controls="controls">
+    <source src="YOUR_MP3_FILE.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div id="cdg-debug">
+  </div>
+</body>
+</html>
