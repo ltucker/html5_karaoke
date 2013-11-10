@@ -10,7 +10,7 @@ Status:
 
 * Haven't tried it in many browsers.  
 * Not actively working on this.
-* Does not keep in sync with music position if changed.
+* Probably flakey if skipped around?
 
 I think there is a more featureful project going on over here
 that includes something similar:
