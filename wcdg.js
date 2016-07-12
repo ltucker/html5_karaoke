@@ -324,10 +324,11 @@ CDGScrollPresetInstruction.prototype.execute = function(context) {
         return;
     }
     
+    var offx, offy;
     for (var x = 0; x < context.WIDTH; x++) {
         for (var y = 0; y < context.HEIGHT; y++) {
             offx = x + hmove; 
-            offy = y + ymove; 
+            offy = y + vmove;
             context.buffer[x+y*context.WIDTH] = this.getPixel(context, offx, offy);
         }
     }
