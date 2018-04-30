@@ -12,7 +12,4 @@ Status:
 * Not actively working on this.
 * Probably flakey if skipped around?
 
-I think there is a more featureful project going on over here
-that includes something similar:
-
-http://cdgmagic.sourceforge.net/
+There are some more active / modern looking forks of this hanging out, check those out too!
