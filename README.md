@@ -12,4 +12,4 @@ Status:
 * Not actively working on this.
 * Probably flakey if skipped around?
 
-There are some more active / modern looking forks of this hanging out, check those out too!
+Also check out [cdgraphics](https://github.com/bhj/cdgraphics), a modern library based on this!
