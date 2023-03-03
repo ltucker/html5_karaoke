@@ -11,14 +11,14 @@
 		document.getElementById('song').addEventListener("playing", function() {
 			player.play();
 		});
-                document.getElementById('song').play();
+    $("#karaoke-display").on("click", function() { document.getElementById('song').play(); });
 	});
   </script>
 </head>
 <body>
   <div id="karaoke-player"></div>
   
-  <canvas id="karaoke-display" width="600" height="432">
+  <canvas id="karaoke-display" width="600" height="432" style="background: url('player.png')">
   </canvas>
   <br/>
   <audio id="song">
@@ -26,7 +26,8 @@
     <source src="private_eyes.ogg" type="audio/ogg" />
   </audio>
   <br/>
-  You should see a karaoke player on this page, sorry if you don't -- try chrome, firefox or safari?<br/> 
+  You should see a karaoke player on this page when you click the play button above.<br/>
+  Sorry if you don't! This is a fairly old prototype :)<br/>
   <a href="https://github.com/ltucker/html5_karaoke">Back to project</a>
 
   <div id="cdg-debug">
